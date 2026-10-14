@@ -140,13 +140,8 @@ CREATE TABLE `siswa` (
 -- Dumping data for table `siswa`
 --
 
-INSERT INTO `siswa` (`id`, `user_id`, `nama`, `kelas`, `qr_code`, `poin`, `stella`, `tonitrus`, `total_poin`, `gelar`, `status_blokir`, `alasan_blokir`, `sertifikat_diberikan`, `sertifikat_file`, `nomor_ortu`, `tanggal_imperial`) VALUES
-(1, 5, 'Muhammad Hafidz Zaky Alfajri', 'X RPL 1', 'assets/qrcodes/siswa_1.png', 0, 0, 0, 0, '', 'aktif', NULL, '0', 'assets/sertifikat/sertifikat_1_20260408.png', NULL, '2026-04-08'),
-(2, 6, 'Refal Lutfi Hadi Putra', 'X RPL 1', 'assets/qrcodes/siswa_2.png', 0, 0, 0, 0, '', 'aktif', NULL, '0', NULL, NULL, NULL),
-(3, 7, 'Sofia Celina', 'X IPA 2', 'assets/qrcodes/siswa_3.png', 0, 0, 0, 0, '', 'aktif', NULL, '0', NULL, NULL, NULL),
-(4, 8, 'Riza Wijdan', 'X RPL 1', 'assets/qrcodes/siswa_4.png', 0, 0, 0, 0, '', 'aktif', NULL, '0', NULL, NULL, NULL),
-(5, 9, 'Aisyah Nayla', 'X IPA 2', 'assets/qrcodes/siswa_5.png', 0, 0, 0, 0, '', 'aktif', NULL, '0', NULL, NULL, NULL),
-(6, 10, 'Maida Nono', 'X IPA 2', 'assets/qrcodes/siswa_6.png', 0, 0, 0, 0, '', 'aktif', NULL, '0', NULL, NULL, NULL);
+INSERT INTO `siswa` (`id`, `user_id`, `nama`, `kelas`) VALUES
+(1, 2, 'Siswa Demo 1', 'X RPL 1');
 
 -- --------------------------------------------------------
 
@@ -166,16 +161,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `role`) VALUES
-(1, 'guru', 'guru123', 'guru'),
-(2, 'SatoshiFujhara', 'guru123', 'guru'),
-(3, 'NauvaMaida', 'guru123', 'guru'),
-(4, 'developer', 'developer123', 'developer'),
-(5, 'Hafidz', 'siswa123', 'siswa'),
-(6, 'refallutfi', 'refal08', 'siswa'),
-(7, 'sofiacelina', 'sofia12', 'siswa'),
-(8, 'rizawijdan', 'rizaw57', 'siswa'),
-(9, 'aisyahnayla', 'nayla10', 'siswa'),
-(10, 'maidanono', 'maida44', 'siswa');
+(1, 'demo_guru', 'GANTI_DENGAN_HASH_PASSWORD', 'guru'),
+(2, 'demo_siswa', 'GANTI_DENGAN_HASH_PASSWORD', 'siswa'),
+(3, 'demo_developer', 'GANTI_DENGAN_HASH_PASSWORD', 'developer');
 
 --
 -- Indexes for dumped tables
